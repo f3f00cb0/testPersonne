@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enregistrer une personne{% endblock %}
+
+{% block body %}
+<style>
+    .wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+</style>
+
+<div class="wrapper">
+    <a href="/show">Visualiser les personnes enregistrées</a>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit">Enregistrer cette personne</button>
+    {{ form_end(form) }}
+</div>
+{% endblock %}
